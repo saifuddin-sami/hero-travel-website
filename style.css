@@ -90,6 +90,7 @@ body {
     margin: 0 auto;
     background-color: rgba(224, 224, 230, 0.37);
     border-radius: 8px;
+    backdrop-filter: blur(1.5px);
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -187,35 +188,41 @@ select:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
-.sec3-img {
-    width: 100%;
-    height: 100%;
+.sec3-img { 
+    max-width: 100%;
+    height: 100%; 
     filter: brightness(85%);
 }
 .sec3-row1 {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
+    justify-content: center;
 }
 .sec3-row2 {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     gap: 24px;
     margin-bottom: 24px;
-    display: grid;
-    grid-template-columns: .30fr .46fr .24fr;
+    display: flex;
+    justify-content: center;
 }
 .sec3-row3 {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     gap: 24px;
-    display: grid;
-    grid-template-columns: .4fr .6fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.sec3-img-container:hover {
+    filter: opacity(.8);
+    cursor: pointer;
+}
 
 
 
@@ -275,13 +282,37 @@ select:focus {
     /* Section 2 */
     .section2-container {
         max-width: 90%;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 70px auto;
     }
     .sec2-img img {
         max-width: 100%;
     }
-
+    /* Section 3 */
+    .sec3-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .sec3-txt-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .sec2-title {
+        font-size: 1.3rem;
+    }
+    .sec3-img {
+        width: 500px;
+    }
+    .sec3-row1, .sec3-row2, .sec3-row3 {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .sec3-img-title {
+        font-size: 1.2rem;
+    }
 }
 /* Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 1240px) {
@@ -317,5 +348,28 @@ select:focus {
     }
     .sec2-img img {
         max-width: 100%;
+    }
+    
+    /* Section 3 */
+    .sec3-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .sec3-txt-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .sec3-img {
+        width: 1000px;
+    }
+    .sec3-row1, .sec3-row2, .sec3-row3 {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .sec3-img-title {
+        font-size: 1.7rem;
     }
 }
