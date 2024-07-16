@@ -19,10 +19,6 @@ body {
     color: #424247;
 }
 /* Navbar */
-header {
-    height: 100vh;
-    border: 2px solid;
-}
 .navbar {
     max-width: 85%;
     margin: 50px auto;
@@ -129,6 +125,96 @@ select:focus {
 .banner-btn:hover {
     background-color: darkorange;
 }
+/* Section 2 (Our Popular Tours */
+.section2-container {
+    max-width: 85%;
+    margin: 0 auto 100px;
+    display: flex;
+    gap: 50px;
+}
+.sec2-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 24px;
+}
+.sec2-txt {
+    color: rgba(19, 19, 24, 0.7);
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+.sec2-txt ul {
+    margin: 24px 0;
+}
+.sec2-txt ul li {
+    line-height: 40px;
+    margin-left: 20px;
+}
+.sec2-btn {
+    border-radius: 8px;
+    background-color: #ff5400;
+    border: none;
+    padding: 14px 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s;
+}
+.sec2-btn:hover {
+    background-color: darkorange;
+}
+/* Section 3 (Choose Your Destination) */
+.sec3-container {
+    max-width: 85%;
+    margin: 0 auto 100px;
+}
+.sec3-txt-container {
+    text-align: center;
+    max-width: 45%;
+    margin: 0 auto 48px;
+}
+.sec3-img-container {
+    position: relative;
+}
+.sec3-img-title {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec3-img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(85%);
+}
+.sec3-row1 {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.sec3-row2 {
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 24px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: .30fr .46fr .24fr;
+}
+.sec3-row3 {
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+}
 
 
 
@@ -185,6 +271,17 @@ select:focus {
     }
     /* banner section end */
 
+
+    /* Section 2 */
+    .section2-container {
+        max-width: 90%;
+        flex-direction: column-reverse;
+        margin: 70px auto;
+    }
+    .sec2-img img {
+        max-width: 100%;
+    }
+
 }
 /* Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 1240px) {
@@ -209,5 +306,16 @@ select:focus {
         flex-wrap: wrap;
     }
     /* banner section end */
-    
+
+    /* Section 2 */
+    .section2-container {
+        max-width: 90%;
+        margin: 80px auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec2-img img {
+        max-width: 100%;
+    }
 }
