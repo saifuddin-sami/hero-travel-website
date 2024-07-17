@@ -263,8 +263,119 @@ select:focus {
     margin: 32px 0 16px;
 }
 /* Section 5 */
+.sec5-container {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 100px;
+}
+.sec5-box-container {
+    max-width: 90%; 
+    height: 500px;
+    background-image: url(Images/sec5-1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    padding: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.sec5-box-container2 {
+    max-width: 90%; 
+    height: 500px;
+    background-image: url(Images/sec5-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    padding: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.sec5-box {
+    max-width: 45%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 16px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px; 
+}
+
+.sec5-box nav {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.sec5-box nav li {
+    list-style-type: none;
+    color: #5a5a5d;
+    font-size: 1rem; 
+}
+.sec5-box nav li i {
+    color: #ff5400;
+}
+
+.sec5-box-title {
+    color: #131318;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.sec5-box-txt {
+    max-width: 90%;
+    color: #5a5a5d;
+    margin: 16px 0;
+    font-size: 1rem;
+}
+.sec5-box-price {
+    color: #ff5400;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
 
 
+.sec5-btn {
+    background-color: #ff5400;
+    width: 150px;
+    border-radius: 8px;
+    padding: 16px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: all .5s;
+}
+.sec5-btn:hover {
+    background-color: darkorange;
+}
+.sec5-btn2 {
+    background-color: #ff5400;
+    border-radius: 8px;
+    padding: 14px 22px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: all .5s;
+    margin-top: 24px;
+}
+.sec5-btn2:hover {
+    background-color: darkorange;
+}
 
 
 
@@ -342,7 +453,7 @@ select:focus {
     }
     .sec3-txt-container {
         max-width: 90%;
-        margin: 0 auto 40px;
+        margin: 0 auto 30px;
     }
     .sec2-title {
         font-size: 1.3rem;
@@ -381,6 +492,34 @@ select:focus {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    /* Section 5 */
+    .sec5-container {
+        max-width: 90%;
+        height: 100%;
+    }
+    .sec5-box-container, .sec5-box-container2 {
+        max-width: 100%;
+        margin: 0 auto 16px;
+        align-items: flex-end;
+    }
+    .sec5-box {
+        max-width: 100%;
+        height: fit-content;
+        padding: 24px;
+    }
+    .sec5-box nav {
+        flex-wrap: wrap;
+    }
+    .sec5-box-title {
+        font-size: 1.25rem;
+    }
+    .sec5-box-txt {
+        max-width: 100%;
+        font-size: .8rem;
+    }
+    .sec5-box-price, .sec5-btn {
+        font-size: 1rem;
     }
 }
 /* Medium Devices */
@@ -426,7 +565,7 @@ select:focus {
     }
     .sec3-txt-container {
         max-width: 80%;
-        margin: 0 auto 50px;
+        margin: 0 auto 40px;
     }
     .sec3-img {
         width: 1000px;
@@ -453,5 +592,34 @@ select:focus {
     }
     .sec4-box {
         margin-bottom: 30px;
+    }
+
+    /* Section 5 */
+    .sec5-container {
+        max-width: 90%;
+        height: 100%;
+    }
+    .sec5-box-container, .sec5-box-container2 {
+        max-width: 100%;
+        margin: 0 auto 16px;
+        align-items: flex-end;
+    }
+    .sec5-box {
+        max-width: 100%;
+        height: fit-content;
+        padding: 24px;
+    }
+    .sec5-box nav {
+        flex-wrap: wrap;
+    }
+    .sec5-box-title {
+        font-size: 1.25rem;
+    }
+    .sec5-box-txt {
+        max-width: 100%;
+        font-size: .8rem;
+    }
+    .sec5-box-price, .sec5-btn {
+        font-size: 1rem;
     }
 }
