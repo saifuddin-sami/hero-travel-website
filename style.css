@@ -143,7 +143,6 @@ select:focus {
     color: rgba(19, 19, 24, 0.7);
     font-weight: normal;
     font-size: 1rem;
-    margin-bottom: 32px;
 }
 .sec2-txt ul {
     margin: 24px 0;
@@ -163,6 +162,7 @@ select:focus {
     font-weight: 700;
     cursor: pointer;
     transition: all .5s;
+    margin-top: 32px;
 }
 .sec2-btn:hover {
     background-color: darkorange;
@@ -457,6 +457,7 @@ select:focus {
     }
     .sec2-title {
         font-size: 1.3rem;
+        margin-bottom: 15px;
     }
     .sec3-img {
         width: 500px;
@@ -497,6 +498,7 @@ select:focus {
     .sec5-container {
         max-width: 90%;
         height: 100%;
+        margin: 0 auto 70px;
     }
     .sec5-box-container, .sec5-box-container2 {
         max-width: 100%;
@@ -520,6 +522,9 @@ select:focus {
     }
     .sec5-box-price, .sec5-btn {
         font-size: 1rem;
+    }
+    .sec5-btn2 {
+        margin-top: 10px;
     }
 }
 /* Medium Devices */
@@ -621,5 +626,8 @@ select:focus {
     }
     .sec5-box-price, .sec5-btn {
         font-size: 1rem;
+    }
+    .sec5-btn2 {
+        margin-top: 20px;
     }
 }
